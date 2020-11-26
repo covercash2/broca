@@ -1,0 +1,20 @@
+[package]
+name = "broca"
+version = "0.1.0"
+authors = ["Chris Overcash <covercash2@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+log = "0.4.11"
+fern = { version = "0.5", features = ["colored"] }
+chrono = "0.4"
+
+# web server
+rocket = "0.4.6"
+
+# neural net natural language processing with libtorch
+rust-bert = "0.11.0"
+rust_tokenizers = "6"
+tch = "0.2"
